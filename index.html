@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dante OS · Confidentialité</title>
+<meta name="description" content="Politique de confidentialité de Dante OS : aucun serveur, aucune publicité, aucune statistique. Privacy policy of Dante OS.">
+<style>
+  :root { --bg: #0b0c12; --card: #14161f; --line: #262a38; --text: #e9ebf2; --muted: #a2a8ba; --accent: #b69cff; --accent2: #5fd3ee; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Ubuntu", sans-serif; line-height: 1.6; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 18px 64px; }
+  header { text-align: center; margin-bottom: 26px; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  .sub { color: var(--muted); font-size: 14px; }
+  nav { display: flex; justify-content: center; gap: 10px; margin: 18px 0 8px; }
+  nav a { color: var(--text); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; font-size: 14px; background: var(--card); }
+  nav a:hover { border-color: var(--accent); }
+  .tldr { background: linear-gradient(135deg, rgba(182,156,255,.14), rgba(95,211,238,.10)); border: 1px solid var(--line); border-radius: 18px; padding: 16px 20px; margin: 18px 0 26px; }
+  h2 { font-size: 20px; margin: 30px 0 8px; color: var(--accent); }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { color: var(--text); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent2); }
+  section { margin-bottom: 40px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Dante OS</h1>
+    <div class="sub">Politique de confidentialité · Privacy policy</div>
+    <nav><a href="#fr">Français</a><a href="#en">English</a></nav>
+  </header>
+
+  <section id="fr" lang="fr">
+    <div class="sub">Dernière mise à jour : 27 octobre 2026</div>
+    <div class="tldr"><strong>En bref.</strong> Dante OS n'a aucun serveur. Il n'envoie aucune donnée à son éditeur, ne contient ni publicité ni outil de statistiques, ne crée aucun compte et n'envoie aucun rapport de plantage. Tout ce qu'il garde reste sur ton téléphone.</div>
+
+    <h2>Ce que l'appli garde sur ton téléphone</h2>
+    <p>Tout reste dans l'espace privé de l'application, sur ton appareil, et disparaît quand tu la désinstalles :</p>
+    <ul>
+      <li>ta disposition et tes réglages (bureau, dock, pages, dossiers, thèmes, effets Dante FX, et l'image que tu choisis pour le bouclier) ;</li>
+      <li>la liste de tes applications, pour le tiroir et les icônes ;</li>
+      <li>tes notifications, seulement si tu actives l'accès aux notifications, pour le centre de notifications et les pastilles ;</li>
+      <li>les sources de données que tu ajoutes (adresses, clés d'API, flux d'actualités). Les mots de passe SSH et du module Fichiers sont chiffrés dans le Keystore d'Android ;</li>
+      <li>les conversations avec Dante IA et les souvenirs que tu lui demandes de retenir, ainsi que le modèle d'intelligence artificielle lui-même. L'assistant fonctionne entièrement sur le téléphone : tes conversations n'en sortent pas.</li>
+    </ul>
+
+    <h2>Ce qui part sur Internet</h2>
+    <p>Uniquement ce que tu utilises ou configures toi-même :</p>
+    <ul>
+      <li><strong>Tes sources</strong> : les flux d'actualités, API et serveurs (SSH, SMB, FTP, SFTP, serveur personnel) que tu ajoutes reçoivent les requêtes que tu leur destines, avec les clés que tu as saisies. Les modèles du Magasin d'API (par exemple Open-Meteo, CoinGecko, NASA) ne sont contactés que quand tu les testes ou les ajoutes.</li>
+      <li><strong>La recherche de flux</strong> : quand tu cherches les flux d'un site, Dante OS ouvre les pages de ce site pour les trouver.</li>
+      <li><strong>Dante IA</strong> : le modèle est téléchargé une fois depuis Hugging Face, quand tu le demandes. Si tu autorises l'accès à Internet dans ses réglages et que ta question le demande, il interroge DuckDuckGo, Wikipédia ou Open-Meteo avec les mots de ta recherche, sans aucun identifiant.</li>
+      <li><strong>Avec root seulement</strong> : si tu actives le filtre DNS, les listes publiques de blocage sont téléchargées depuis leurs sites.</li>
+    </ul>
+    <p>Rien d'autre. L'éditeur ne reçoit aucune information, aucun identifiant, aucune statistique. Les services tiers cités ont leurs propres règles de confidentialité.</p>
+
+    <h2>Achats (Dante Pro)</h2>
+    <p>Dante Pro s'achète par Google Play. Le paiement est entièrement géré par Google : Dante OS ne voit jamais ta carte ni ton identité, il reçoit seulement la confirmation que l'achat est valide. La <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a> s'applique au paiement.</p>
+
+    <h2>Micro et appareil photo</h2>
+    <p>Le micro sert seulement quand tu parles à Dante IA : la reconnaissance vocale est celle d'Android (sur le téléphone quand le pack de langue est installé, sinon par le service de Google). L'appareil photo et les photos ne servent que quand tu montres une image à Dante IA ; l'image est analysée sur le téléphone.</p>
+
+    <h2>Modules avec root (facultatif)</h2>
+    <p>Si ton téléphone est rooté et que tu l'autorises, certains modules (pare-feu, filtre DNS, XRay, Sécurité, processeur, batterie) exécutent des commandes avec ces droits sur ton appareil. Ils lisent des informations du système, comme le trafic de chaque application, et ne les envoient nulle part. Sans root, aucune commande root n'est jamais lancée.</p>
+
+    <h2>Permissions</h2>
+    <p>Chaque permission est demandée au moment où tu utilises la fonction qui en a besoin, et se retire dans les réglages d'Android. Le Guide intégré à l'application détaille ce que chaque module lit, modifie et envoie.</p>
+
+    <h2>Enfants</h2>
+    <p>Dante OS ne s'adresse pas aux enfants de moins de 13 ans et ne collecte de données sur personne.</p>
+
+    <h2>Suppression</h2>
+    <p>Comme rien n'est collecté, il n'y a rien à supprimer chez l'éditeur : désinstaller l'application efface tout ce qu'elle gardait sur ton téléphone.</p>
+
+    <h2>Changements</h2>
+    <p>Si cette politique change, la nouvelle version sera publiée sur cette page, avec sa date.</p>
+
+    <h2>Contact</h2>
+    <p>Dante OS · <a href="mailto:danteantpi@proton.me">danteantpi@proton.me</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <div class="sub">Last updated: 27 October 2026</div>
+    <div class="tldr"><strong>In short.</strong> Dante OS has no server. It sends no data to its publisher, contains no ads or analytics, creates no account and sends no crash reports. Everything it keeps stays on your phone.</div>
+
+    <h2>What the app keeps on your phone</h2>
+    <p>Everything stays in the app's private storage on your device and is removed when you uninstall it:</p>
+    <ul>
+      <li>your layout and settings (desktop, dock, pages, folders, themes, Dante FX effects, and the picture you pick for the shield);</li>
+      <li>the list of your apps, for the drawer and icons;</li>
+      <li>your notifications, only if you enable notification access, for the notification center and badges;</li>
+      <li>the data sources you add (addresses, API keys, news feeds). SSH and Files passwords are encrypted in the Android Keystore;</li>
+      <li>your conversations with Dante AI and the memories you ask it to keep, as well as the AI model itself. The assistant runs entirely on the phone: your conversations never leave it.</li>
+    </ul>
+
+    <h2>What goes over the Internet</h2>
+    <p>Only what you use or set up yourself:</p>
+    <ul>
+      <li><strong>Your sources</strong>: the news feeds, APIs and servers (SSH, SMB, FTP, SFTP, personal server) you add receive the requests you send them, with the keys you typed. API Store templates (for example Open-Meteo, CoinGecko, NASA) are only contacted when you test or add them.</li>
+      <li><strong>Feed finder</strong>: when you look for a site's feeds, Dante OS opens that site's pages to find them.</li>
+      <li><strong>Dante AI</strong>: the model is downloaded once from Hugging Face, when you ask for it. If you allow Internet access in its settings and your question needs it, it queries DuckDuckGo, Wikipedia or Open-Meteo with the words of your search, without any identifier.</li>
+      <li><strong>Root only</strong>: if you turn on the DNS filter, public blocklists are downloaded from their sites.</li>
+    </ul>
+    <p>Nothing else. The publisher receives no information, no identifier, no statistics. The third-party services above have their own privacy rules.</p>
+
+    <h2>Purchases (Dante Pro)</h2>
+    <p>Dante Pro is bought through Google Play. Payment is fully handled by Google: Dante OS never sees your card or identity, it only receives confirmation that the purchase is valid. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies to the payment.</p>
+
+    <h2>Microphone and camera</h2>
+    <p>The microphone is only used when you talk to Dante AI: speech recognition is Android's own (on the phone when the language pack is installed, otherwise through Google's service). The camera and photos are only used when you show a picture to Dante AI; the picture is analysed on the phone.</p>
+
+    <h2>Root modules (optional)</h2>
+    <p>If your phone is rooted and you allow it, some modules (firewall, DNS filter, XRay, Security, processor, battery) run commands with those rights on your device. They read system information, such as each app's traffic, and send it nowhere. Without root, no root command is ever run.</p>
+
+    <h2>Permissions</h2>
+    <p>Each permission is requested when you use the feature that needs it and can be withdrawn in Android settings. The in-app Guide details what each module reads, changes and sends.</p>
+
+    <h2>Children</h2>
+    <p>Dante OS is not aimed at children under 13 and collects no data about anyone.</p>
+
+    <h2>Deletion</h2>
+    <p>Since nothing is collected, there is nothing to delete on the publisher's side: uninstalling the app erases everything it kept on your phone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be published on this page, with its date.</p>
+
+    <h2>Contact</h2>
+    <p>Dante OS · <a href="mailto:danteantpi@proton.me">danteantpi@proton.me</a></p>
+  </section>
+
+  <footer>Dante OS</footer>
+</main>
+</body>
+</html>
