@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dante OS · Confidentialité</title>
-<meta name="description" content="Politique de confidentialité de Dante OS : aucun serveur, aucune publicité, aucune statistique. Privacy policy of Dante OS.">
+<meta name="description" content="Politique de confidentialité de Dante OS : aucune publicité, aucune statistique, tout reste sur ton téléphone. Privacy policy of Dante OS.">
 <style>
   :root { --bg: #0b0c12; --card: #14161f; --line: #262a38; --text: #e9ebf2; --muted: #a2a8ba; --accent: #b69cff; --accent2: #5fd3ee; }
   * { box-sizing: border-box; }
@@ -38,16 +38,17 @@
   </header>
 
   <section id="fr" lang="fr">
-    <div class="sub">Dernière mise à jour : 28 octobre 2026</div>
-    <div class="tldr"><strong>En bref.</strong> Dante OS ne contient ni publicité ni outil de statistiques et n'envoie aucun rapport de plantage. Tout ce qu'il garde reste sur ton téléphone. Seule exception, facultative : le magasin de thèmes communautaires, si tu t'y connectes avec Google pour publier, noter ou signaler.</div>
+    <div class="sub">Dernière mise à jour : 12 novembre 2026 · Dante OS sur Google Play</div>
+    <div class="tldr"><strong>En bref.</strong> Dante OS ne contient ni publicité ni outil de statistiques et n'envoie aucun rapport de plantage. Tout ce qu'il garde reste sur ton téléphone. Deux exceptions : le magasin de thèmes communautaires, si tu t'y connectes avec Google pour publier, noter ou signaler, et la vérification de ton achat Dante Pro (une empreinte du téléphone, jamais son identifiant, et rien n'est gardé côté serveur sur Google Play).</div>
 
     <h2>Ce que l'appli garde sur ton téléphone</h2>
     <p>Tout reste dans l'espace privé de l'application, sur ton appareil, et disparaît quand tu la désinstalles :</p>
     <ul>
       <li>ta disposition et tes réglages (bureau, dock, pages, dossiers, thèmes, effets Dante FX, et l'image que tu choisis pour le bouclier) ;</li>
+      <li>les photos et vidéos que tu choisis pour ton fond Dante FX, tes bulles et tes cadres du bureau : Dante OS en garde une copie dans son espace privé, et ne les envoie nulle part ;</li>
       <li>la liste de tes applications, pour le tiroir et les icônes ;</li>
       <li>tes notifications, seulement si tu actives l'accès aux notifications, pour le centre de notifications et les pastilles ;</li>
-      <li>les sources de données que tu ajoutes (adresses, clés d'API, flux d'actualités). Les mots de passe SSH et du module Fichiers sont chiffrés dans le Keystore d'Android ;</li>
+      <li>les sources de données que tu ajoutes (adresses, clés d'API, flux d'actualités). Les clés d'API, ainsi que les mots de passe SSH et du module Fichiers, sont chiffrés avec une clé du Keystore d'Android ;</li>
       <li>les conversations avec Dante IA et les souvenirs que tu lui demandes de retenir, ainsi que le modèle d'intelligence artificielle lui-même. L'assistant fonctionne entièrement sur le téléphone : tes conversations n'en sortent pas.</li>
     </ul>
 
@@ -55,18 +56,19 @@
     <p>Uniquement ce que tu utilises ou configures toi-même :</p>
     <ul>
       <li><strong>Tes sources</strong> : les flux d'actualités, API et serveurs (SSH, SMB, FTP, SFTP, serveur personnel) que tu ajoutes reçoivent les requêtes que tu leur destines, avec les clés que tu as saisies. Les modèles du Magasin d'API (par exemple Open-Meteo, CoinGecko, NASA) ne sont contactés que quand tu les testes ou les ajoutes.</li>
+      <li><strong>Maison (Home Assistant)</strong> : si tu ajoutes ton Home Assistant dans Données, le module Maison lit l'état de tes volets, lumières et prises et leur envoie tes commandes. Ces échanges vont uniquement de ton téléphone à l'adresse de ton Home Assistant (en général chez toi, sur ton réseau), avec le jeton que tu as créé ; ni l'éditeur ni personne d'autre ne les reçoit.</li>
       <li><strong>La recherche de flux</strong> : quand tu cherches les flux d'un site, Dante OS ouvre les pages de ce site pour les trouver.</li>
       <li><strong>Dante IA</strong> : le modèle est téléchargé une fois depuis Hugging Face, quand tu le demandes. Si tu autorises l'accès à Internet dans ses réglages et que ta question le demande, il interroge DuckDuckGo, Wikipédia ou Open-Meteo avec les mots de ta recherche, sans aucun identifiant.</li>
       <li><strong>Avec root seulement</strong> : si tu actives le filtre DNS, les listes publiques de blocage sont téléchargées depuis leurs sites.</li>
     </ul>
-    <p>Rien d'autre. L'éditeur ne reçoit aucune information, aucun identifiant, aucune statistique. Les services tiers cités ont leurs propres règles de confidentialité.</p>
+    <p>Rien d'autre. En dehors du magasin de thèmes et de la vérification de Dante Pro, décrits plus bas, l'éditeur ne reçoit aucune information, aucun identifiant, aucune statistique. Les services tiers cités ont leurs propres règles de confidentialité.</p>
 
     <h2>Magasin de thèmes communautaires (facultatif)</h2>
     <p>Regarder et installer des thèmes ne demande aucun compte. Pour publier, noter ou signaler un thème, tu te connectes avec ton compte Google. Le magasin (hébergé chez Supabase, en Europe, à Francfort) garde alors ton adresse e-mail (jamais montrée aux autres), le nom d'auteur que tu choisis, les thèmes et les captures que tu publies, tes notes et tes signalements. Les thèmes publiés et leurs captures sont publics. Ces données ne sont ni vendues ni partagées avec des tiers.</p>
 
     <h2>Achats (Dante Pro)</h2>
-    <p>Dante Pro s'achète par Google Play. Le paiement est entièrement géré par Google : Dante OS ne voit jamais ta carte ni ton identité, il reçoit seulement la confirmation que l'achat est valide. La <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a> s'applique au paiement.</p>
-
+    <p>Sur Google Play, Dante Pro s'achète par Google Play. Le paiement est entièrement géré par Google : Dante OS ne voit jamais ta carte ni ton identité. La <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a> s'applique au paiement.</p>
+    <p><strong>Vérification de l'achat.</strong> Pour bloquer les fausses applis d'achat, Dante OS envoie une fois le jeton de ton achat (fourni par Google) et une empreinte du téléphone au serveur Dante Pro (une fonction hébergée chez Supabase, en Europe, à Francfort). L'empreinte est calculée sur le téléphone à partir de l'identifiant Android, qui lui-même n'est jamais envoyé. Le serveur demande à Google si l'achat est réel, puis renvoie une réponse signée que l'appli garde et revérifie sans Internet. Sur Google Play, le serveur ne garde ni le jeton ni l'empreinte.</p>
     <h2>Micro et appareil photo</h2>
     <p>Le micro sert seulement quand tu parles à Dante IA : la reconnaissance vocale est celle d'Android (sur le téléphone quand le pack de langue est installé, sinon par le service de Google). L'appareil photo et les photos servent quand tu montres une image à Dante IA ; l'image est analysée sur le téléphone. Les contacts ne sont lus, sur le téléphone, que quand tu demandes à Dante IA d'appeler quelqu'un.</p>
     <h3>Photo de l'intrus (option du mode panique)</h3>
@@ -79,7 +81,7 @@
     <p>Chaque permission est demandée au moment où tu utilises la fonction qui en a besoin, et se retire dans les réglages d'Android. Le Guide intégré à l'application détaille ce que chaque module lit, modifie et envoie.</p>
 
     <h2>Enfants</h2>
-    <p>Dante OS ne s'adresse pas aux enfants de moins de 13 ans et ne collecte de données sur personne.</p>
+    <p>Dante OS s'adresse aux personnes de 16 ans et plus. Il ne collecte sciemment aucune donnée sur des enfants.</p>
 
     <h2 id="suppression">Suppression du compte et des données</h2>
     <p>Dans Dante OS : Thèmes communautaires ▸ Profil ▸ « Supprimer mon compte ». Ton profil, tes thèmes publiés, leurs captures, tes notes et tes signalements sont effacés tout de suite et définitivement. Tu peux aussi supprimer un seul thème depuis sa page, ou demander la suppression par e-mail à danteantpi@proton.me (traitée sous 30 jours). Désinstaller l'application efface tout ce qu'elle gardait sur ton téléphone.</p>
@@ -94,16 +96,17 @@
   <hr>
 
   <section id="en" lang="en">
-    <div class="sub">Last updated: 28 October 2026</div>
-    <div class="tldr"><strong>In short.</strong> Dante OS contains no ads or analytics and sends no crash reports. Everything it keeps stays on your phone. The only, optional, exception: the community theme store, if you sign in with Google to publish, rate or report.</div>
+    <div class="sub">Last updated: 12 November 2026 · Dante OS on Google Play</div>
+    <div class="tldr"><strong>In short.</strong> Dante OS contains no ads or analytics and sends no crash reports. Everything it keeps stays on your phone. Two exceptions: the community theme store, if you sign in with Google to publish, rate or report, and the check of your Dante Pro purchase (a fingerprint of the phone, never its ID, and nothing is kept server-side on Google Play).</div>
 
     <h2>What the app keeps on your phone</h2>
     <p>Everything stays in the app's private storage on your device and is removed when you uninstall it:</p>
     <ul>
       <li>your layout and settings (desktop, dock, pages, folders, themes, Dante FX effects, and the picture you pick for the shield);</li>
+      <li>the photos and videos you pick for your Dante FX background, your desktop bubbles and frames: Dante OS keeps a copy in its private storage and sends them nowhere;</li>
       <li>the list of your apps, for the drawer and icons;</li>
       <li>your notifications, only if you enable notification access, for the notification center and badges;</li>
-      <li>the data sources you add (addresses, API keys, news feeds). SSH and Files passwords are encrypted in the Android Keystore;</li>
+      <li>the data sources you add (addresses, API keys, news feeds). API keys, as well as SSH and Files passwords, are encrypted with an Android Keystore key;</li>
       <li>your conversations with Dante AI and the memories you ask it to keep, as well as the AI model itself. The assistant runs entirely on the phone: your conversations never leave it.</li>
     </ul>
 
@@ -111,18 +114,19 @@
     <p>Only what you use or set up yourself:</p>
     <ul>
       <li><strong>Your sources</strong>: the news feeds, APIs and servers (SSH, SMB, FTP, SFTP, personal server) you add receive the requests you send them, with the keys you typed. API Store templates (for example Open-Meteo, CoinGecko, NASA) are only contacted when you test or add them.</li>
+      <li><strong>Home (Home Assistant)</strong>: if you add your Home Assistant in Data, the Home module reads the state of your shutters, lights and plugs and sends them your commands. This traffic only goes from your phone to your Home Assistant's address (usually at home, on your own network), with the token you created; neither the publisher nor anyone else receives it.</li>
       <li><strong>Feed finder</strong>: when you look for a site's feeds, Dante OS opens that site's pages to find them.</li>
       <li><strong>Dante AI</strong>: the model is downloaded once from Hugging Face, when you ask for it. If you allow Internet access in its settings and your question needs it, it queries DuckDuckGo, Wikipedia or Open-Meteo with the words of your search, without any identifier.</li>
       <li><strong>Root only</strong>: if you turn on the DNS filter, public blocklists are downloaded from their sites.</li>
     </ul>
-    <p>Nothing else. The publisher receives no information, no identifier, no statistics. The third-party services above have their own privacy rules.</p>
+    <p>Nothing else. Apart from the theme store and the Dante Pro check described below, the publisher receives no information, no identifier, no statistics. The third-party services above have their own privacy rules.</p>
 
     <h2>Community theme store (optional)</h2>
     <p>Browsing and installing themes needs no account. To publish, rate or report a theme, you sign in with your Google account. The store (hosted by Supabase in Europe, Frankfurt) then keeps your email address (never shown to others), the author name you choose, the themes and screenshots you publish, your ratings and reports. Published themes and their screenshots are public. This data is neither sold nor shared with third parties.</p>
 
     <h2>Purchases (Dante Pro)</h2>
-    <p>Dante Pro is bought through Google Play. Payment is fully handled by Google: Dante OS never sees your card or identity, it only receives confirmation that the purchase is valid. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies to the payment.</p>
-
+    <p>On Google Play, Dante Pro is bought through Google Play. Payment is fully handled by Google: Dante OS never sees your card or identity. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies to the payment.</p>
+    <p><strong>Purchase check.</strong> To block fake purchase apps, Dante OS sends once your purchase token (provided by Google) and a fingerprint of the phone to the Dante Pro server (a function hosted by Supabase in Europe, Frankfurt). The fingerprint is computed on the phone from the Android ID, which itself is never sent. The server asks Google whether the purchase is real, then returns a signed answer that the app keeps and checks again offline. On Google Play, the server keeps neither the token nor the fingerprint.</p>
     <h2>Microphone and camera</h2>
     <p>The microphone is only used when you talk to Dante AI: speech recognition is Android's own (on the phone when the language pack is installed, otherwise through Google's service). The camera and photos are used when you show a picture to Dante AI; the picture is analysed on the phone. Contacts are only read, on the phone, when you ask Dante AI to call someone.</p>
     <h3>Intruder photo (panic mode option)</h3>
@@ -135,7 +139,7 @@
     <p>Each permission is requested when you use the feature that needs it and can be withdrawn in Android settings. The in-app Guide details what each module reads, changes and sends.</p>
 
     <h2>Children</h2>
-    <p>Dante OS is not aimed at children under 13 and collects no data about anyone.</p>
+    <p>Dante OS is meant for people aged 16 and over. It does not knowingly collect any data about children.</p>
 
     <h2 id="deletion">Account and data deletion</h2>
     <p>In Dante OS: Community themes ▸ Profile ▸ "Delete my account". Your profile, published themes, their screenshots, ratings and reports are erased immediately and permanently. You can also delete a single theme from its page, or ask for deletion by email at danteantpi@proton.me (handled within 30 days). Uninstalling the app erases everything it kept on your phone.</p>
